@@ -1,0 +1,14 @@
+# 改行コードをLFにそろえる（WindowsとMac/Linux、GitHub Actionsで差が出ないようにする）
+* text=auto eol=lf
+
+# Windows用のスクリプトだけはCRLFのまま
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# バイナリ
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary
+*.xlsx binary
